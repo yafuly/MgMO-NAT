@@ -29,7 +29,7 @@ pip install git+https://github.com/dugu9sword/lunanlp.git
 #### MgMO stage
 |                             	| EN<->RO 	| EN<->DE 	|
 |-----------------------------	|---------	|---------	|
-| --validate-interval-updates 	| 300     	| 500     	|
+| --validate-interval-updates 	| 300     	| 300     	|
 | number of tokens per batch  	| 256     	| 1024    	|
 | --dropout                   	| 0.1     	| 0.1     	|
 | --lr-scheduler                   	| fixed    	| fixed     	|
