@@ -45,7 +45,7 @@ pip install git+https://github.com/dugu9sword/lunanlp.git
 | --len-loss | Set to enable length loss during training |
 
 
-### Training:
+### Training
 We provide a script (run.sh) for replicating the results on WMT'16 EN->RO task. For other directions, you need to adjust the data path and corresponding hyper-paramters where necessary.
 
 
@@ -64,7 +64,20 @@ python3 train.py data-bin/wmt14.en-de_kd --source-lang en --target-lang de  --sa
    --length-loss-factor 0.1 --pred-length-offset 
 ``` -->
 
+## Main Files
 
+The implementation is based on Fairseq. We mainly add the following files.
+
+
+```
+fs_plugins
+├── criterions
+│   └── multi_granularity_optimizer.py                   # mutli-granularity loss
+└── models
+    └── nat
+        └── cmlm_transformer.py     # implementation for sampling and granularity generation
+
+```
 
 ### Evaluation
 We select the best checkpoint for evaluation based on the validation BLEU scores. We set the length beam as 5 for inference. See `run.sh' for details.
