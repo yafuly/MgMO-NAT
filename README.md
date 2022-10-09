@@ -72,10 +72,10 @@ The implementation is based on Fairseq. We mainly add the following files.
 ```
 fs_plugins
 ├── criterions
-│   └── multi_granularity_optimizer.py                   # mutli-granularity loss
+│   └── multi_granularity_optimizer.py  # mutli-granularity loss
 └── models
     └── nat
-        └── cmlm_transformer.py     # implementation for sampling and granularity generation
+        └── cmlm_transformer.py         # implementation for sampling and granularity generation
 
 ```
 
