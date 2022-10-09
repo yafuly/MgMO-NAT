@@ -50,6 +50,11 @@ We provide a script (run.sh) for replicating the results on WMT'16 EN->RO task. 
 
 
 
+
+### Evaluation
+We select the best checkpoint for evaluation based on the validation BLEU scores. We set the length beam as 5 for inference. See `run.sh' for details.
+
+
 ## Main Files
 
 The implementation is based on Fairseq. We mainly add the following files.
@@ -64,7 +69,3 @@ fs_plugins
         └── cmlm_transformer.py         # implementation for sampling and granularity generation
 
 ```
-
-### Evaluation
-We select the best checkpoint for evaluation based on the validation BLEU scores. We set the length beam as 5 for inference. See `run.sh' for details.
-
