@@ -61,7 +61,7 @@ The implementation is based on Fairseq. We mainly add the following files.
 
 
 ```
-fs_plugins
+fairseq
 ├── criterions
 │   └── multi_granularity_optimizer.py  # mutli-granularity loss
 └── models
