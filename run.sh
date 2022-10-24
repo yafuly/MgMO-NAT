@@ -31,7 +31,7 @@ CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES=$gpu python $RUN/fairseq_cli/train.p
    --null-input \
    --rm-scale 8 \
    --len-loss \
-   --reward-factor 1 2>&1   2>&1 | tee $MODEL/train.log.$time
+   --reward-factor 1 2>&1 | tee $MODEL/train.log.$time
 
 
 # Inference
