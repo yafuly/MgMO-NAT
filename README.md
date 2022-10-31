@@ -3,7 +3,7 @@ Implementation for paper:
 
 Multi-granularity Optimization for Non-autoregressive Translation (To appear in EMNLP 2022)
 
-<!-- [Paper Link](https://arxiv.org/abs/2110.07515) -->
+[Paper Link](https://arxiv.org/abs/2210.11017)
 
 <!-- ## Replication   -->
 
